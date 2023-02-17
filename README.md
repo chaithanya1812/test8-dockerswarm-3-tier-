@@ -23,7 +23,7 @@
 ## Jenkins Dashboard version1
 ![version1dev](https://user-images.githubusercontent.com/111736742/219800658-bf70512d-a533-40a3-b875-4c1007bfa00e.png)
 ![deployver1](https://user-images.githubusercontent.com/111736742/219803669-e12b77b4-4a3a-4255-b203-8474855c4ef8.png)
-## ##Nginx-server for  springboot-v:1.0
+ ##Nginx-server for  springboot-v:1.0
 ```bash
   events {}
 http {
@@ -47,11 +47,13 @@ server {
 }
 ``` 
 ## OUTPUT of springboot-version-1.0
-![deploynginxv1](https://user-images.githubusercontent.com/111736742/219809213-1dfa36dd-1dd5-4a8c-847e-2f311835fe8a.png)
+![deployv1ping1](https://user-images.githubusercontent.com/111736742/219812775-5fe8e7e1-a6ca-4b38-b614-0bcd98e58746.png)
+## I make 3-enteries in springboot-v:1.0
 ## -------------------------------------------------------------
 ## Deploying springboot-v2.0
 
-## ##Nginx-server for  springboot-v:1.0
+ ##Nginx-server for  springboot-v:2.0
+ # you need to modify this line proxy_pass http://chaitu; --------> proxy_pass http://chaitu1;
 ```bash
   events {}
 http {
@@ -74,4 +76,15 @@ server {
 
 }
 ```
+## Jenkins-dashboard to deploy springbootversion2.0
+![deployversion2](https://user-images.githubusercontent.com/111736742/219812478-79cdb07c-5f4b-4a0e-af06-dcdd53c82930.png)
+ ## Nginx-server for  springboot-v:2.0
+ ![nginx-finalimg](https://user-images.githubusercontent.com/111736742/219812659-1fc43283-b1b5-44e1-a840-142e4fdc3651.png)
+ ## ------------------------------------------------------------------------------------------------------------------------
+ # Now to remove springboot-v:1.0 after your cureent version-v2.0 is stable.
+ #Go To Docker manager node execute the following steps.
+ ![toremoveservice](https://user-images.githubusercontent.com/111736742/219813407-56e6fda7-e292-490e-be21-179d3edc382d.png)
+
+ 
+
 
