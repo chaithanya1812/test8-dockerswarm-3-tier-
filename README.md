@@ -51,9 +51,9 @@ server {
 ## I make 3-enteries in springboot-v:1.0
 ## -------------------------------------------------------------
 ## Deploying springboot-v2.0
-
- ##Nginx-server for  springboot-v:2.0
- # you need to modify this line proxy_pass http://chaitu; --------> proxy_pass http://chaitu1;
+![dockerswarm4](https://user-images.githubusercontent.com/111736742/219813993-69518bee-af34-4f2e-877c-91f848b72841.jpg)
+ ## Nginx-server Configuration file nginx.conf for  springboot-v:2.0
+ #you need to modify this line proxy_pass http://chaitu; --------> proxy_pass http://chaitu1;
 ```bash
   events {}
 http {
