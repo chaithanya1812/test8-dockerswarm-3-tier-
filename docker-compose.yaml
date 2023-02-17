@@ -1,33 +1,30 @@
-version: "3.8"
 services:
-  database: 
+  database:
      image: mongo
-     restart: always  
+     restart: always
      environment:
-      - MONGO_INITDB_ROOT_USERNAME=devdb
-      - MONGO_INITDB_ROOT_PASSWORD=devdb123
+      - MONGO_INITDB_ROOT_USERNAME=qa1812
+      - MONGO_INITDB_ROOT_PASSWORD=qa123
      volumes:
-        - chaituvol:/data/db
+        - chaituvol2:/data/db
      networks:
-       - openshift  
+       - openshift2
   javawebapp:
-     build: 
-     image: chaitu1812/springboot  
+     image: chaitu1812/javawebapp
      environment:
-       - MONGO_DB__HOSTNAME=database
-       - MONGO_DB_USERNAME=devdb
-       - MONGO_DB_PASSWORD=devdb123  
-     restart: always    
-     depends_on: 
+       - MONGO_DB_HOSTNAME=database
+       - MONGO_DB_USERNAME=qa1812
+       - MONGO_DB_PASSWORD=qa123
+     restart: always
+     depends_on:
        - database
      networks:
-       - openshift
+       - openshift2
      ports:
-       - 8084:8080
-	deploy:
-       replicas: 3
-	
+       - 8081:8080
+     deploy:
+       replicas:3
 volumes:
-  chaituvol: {}  
+  chaituvol2: {}
 networks:
-  openshift: {}
+  openshift2: {}
