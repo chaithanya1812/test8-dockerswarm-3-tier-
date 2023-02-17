@@ -51,3 +51,27 @@ server {
 ## -------------------------------------------------------------
 ## Deploying springboot-v2.0
 
+## ##Nginx-server for  springboot-v:1.0
+```bash
+  events {}
+http {
+upstream chaitu{
+server 13.232.1.17:8081;
+server 15.207.111.244:8081;
+server 3.110.122.170:8081;
+}
+upstream chaitu1{
+server 13.232.1.17:8082;
+server 15.207.111.244:8082;
+server 3.110.122.170:8082;
+}
+server {
+        listen 9000;
+      location / {
+      proxy_pass http://chaitu1;
+      }
+  }
+
+}
+```
+
