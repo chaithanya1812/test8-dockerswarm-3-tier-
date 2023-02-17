@@ -11,7 +11,7 @@ services:
      networks:
        - openshift2
   javawebapp1:
-     image: chaitu1812/javawebapp1
+     image: chaitu1812/springboot:v2.0
      environment:
        - MONGO_DB_HOSTNAME=database
        - MONGO_DB_USERNAME=qa1812
