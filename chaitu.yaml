@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  database:
+     image: mongo
+     restart: always
+     environment:
+      - MONGO_INITDB_ROOT_USERNAME=qa1812
+      - MONGO_INITDB_ROOT_PASSWORD=qa123
+     volumes:
+        - chaituvol2:/data/db
+     networks:
+       - openshift2
+  javawebapp:
+     image: chaitu1812/javawebapp
+     environment:
+       - MONGO_DB_HOSTNAME=database
+       - MONGO_DB_USERNAME=qa1812
+       - MONGO_DB_PASSWORD=qa123
+     restart: always
+     depends_on:
+       - database
+     networks:
+       - openshift2
+     ports:
+       - 8081:8080
+     deploy:
+       replicas: 3
+volumes:
+  chaituvol2: {}
+networks:
+  openshift2: {}
