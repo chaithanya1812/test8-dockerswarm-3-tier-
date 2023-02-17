@@ -37,8 +37,6 @@ server 13.232.1.17:8082;
 server 15.207.111.244:8082;
 server 3.110.122.170:8082;
 }
-
-
 server {
         listen 9000;
       location / {
@@ -48,3 +46,8 @@ server {
 
 }
 ``` 
+## OUTPUT of springboot-version-1.0
+![deploynginxv1](https://user-images.githubusercontent.com/111736742/219809213-1dfa36dd-1dd5-4a8c-847e-2f311835fe8a.png)
+## -------------------------------------------------------------
+## Deploying springboot-v2.0
+
