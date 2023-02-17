@@ -18,3 +18,33 @@
 ## Image
 ![docker-swarm2](https://user-images.githubusercontent.com/111736742/219730684-a0ebcd22-9420-472f-b8d9-c92c43a7a467.jpg)
 ## -------------------------------------------------------------------
+## Building springboot-v:1.0
+![depv1](https://user-images.githubusercontent.com/111736742/219800202-706f6b25-30fc-46d3-8ed9-8ba29ea339ba.png)
+## Jenkins Dashboard version1
+![version1dev](https://user-images.githubusercontent.com/111736742/219800658-bf70512d-a533-40a3-b875-4c1007bfa00e.png)
+![deployver1](https://user-images.githubusercontent.com/111736742/219803669-e12b77b4-4a3a-4255-b203-8474855c4ef8.png)
+## ##Nginx-server for  springboot-v:1.0
+```bash
+  events {}
+http {
+upstream chaitu{
+server 13.232.1.17:8081;
+server 15.207.111.244:8081;
+server 3.110.122.170:8081;
+}
+upstream chaitu1{
+server 13.232.1.17:8082;
+server 15.207.111.244:8082;
+server 3.110.122.170:8082;
+}
+
+
+server {
+        listen 9000;
+      location / {
+      proxy_pass http://chaitu;
+      }
+  }
+
+}
+``` 
