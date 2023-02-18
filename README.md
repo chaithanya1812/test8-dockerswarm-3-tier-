@@ -1,4 +1,4 @@
-## 3-Tier Application by Docker-swarm
+## 3-Tier Application by Docker-swarm(Blue-Green Deployment)
 #Deploying 3-Tier Java Application of two versions.
 
 1.)springboot --> v:1.0 this version deployed in [dev-environment] called blue-environment.---------->accessing by the end-users.
