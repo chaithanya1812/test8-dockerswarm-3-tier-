@@ -50,6 +50,7 @@ server {
 ![deployv1ping1](https://user-images.githubusercontent.com/111736742/219812775-5fe8e7e1-a6ca-4b38-b614-0bcd98e58746.png)
 ## I make 3-enteries in springboot-v:1.0
 ## -------------------------------------------------------------
+## Green-Environment
 ## Deploying springboot-v2.0
 ![dockerswarm4](https://user-images.githubusercontent.com/111736742/219813993-69518bee-af34-4f2e-877c-91f848b72841.jpg)
  ## Nginx-server Configuration file nginx.conf for  springboot-v:2.0
